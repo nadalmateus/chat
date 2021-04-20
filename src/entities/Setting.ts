@@ -3,11 +3,11 @@ import {
   Column,
   CreateDateColumn,
   UpdateDateColumn,
-  PrimaryColumn,
-} from "typeorm";
-import { v4 as uuid } from "uuid";
+  PrimaryColumn
+} from 'typeorm'
+import { v4 as uuid } from 'uuid'
 
-@Entity("settings")
+@Entity('settings')
 class Setting {
   @PrimaryColumn()
   id: string;
@@ -24,11 +24,11 @@ class Setting {
   @CreateDateColumn()
   created_at: Date;
 
-  constructor() {
+  constructor () {
     if (!this.id) {
-      this.id = uuid();
+      this.id = uuid()
     }
   }
 }
 
-export { Setting };
+export { Setting }
