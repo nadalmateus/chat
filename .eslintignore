@@ -1,3 +1,4 @@
 /*.js
+**/*.sqlite
 node_modules
 dist
