@@ -20,7 +20,6 @@ export class CreateUsers1619021859947 implements MigrationInterface {
             type: 'timestamp',
             default: 'now()'
           }
-
         ]
       })
     )

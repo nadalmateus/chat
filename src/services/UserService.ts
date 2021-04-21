@@ -13,9 +13,7 @@ class UsersService {
       return userExists
     }
 
-    const user = usersRepository.create({
-      email
-    })
+    const user = usersRepository.create({ email })
 
     await usersRepository.save(user)
 
