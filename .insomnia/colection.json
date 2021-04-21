@@ -1,0 +1,157 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-04-21T18:35:51.867Z",
+  "__export_source": "insomnia.desktop.app:v2021.2.2",
+  "resources": [
+    {
+      "_id": "req_71281ea76e54471eae2de3fed6e2233b",
+      "parentId": "fld_b131f808283941d085560ff93d86c383",
+      "modified": 1619029555816,
+      "created": 1618937331997,
+      "url": "{{ _.baseUrl }}/users",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"teste@23333.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_21a2c8a52aab450194ce09edd1135d23"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1618710126613,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_b131f808283941d085560ff93d86c383",
+      "parentId": "wrk_ea769cacaf61484592da106716bd400a",
+      "modified": 1619027743524,
+      "created": 1619027743524,
+      "name": "Users",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1619027743524,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_ea769cacaf61484592da106716bd400a",
+      "parentId": null,
+      "modified": 1618835575322,
+      "created": 1618835575322,
+      "name": "chat",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_b09e54983b854e95817fdbd91c734bca",
+      "parentId": "fld_3bfad9088d464e95b3e6b62481a996db",
+      "modified": 1619028053625,
+      "created": 1619027749823,
+      "url": "{{ _.baseUrl }}/settings",
+      "name": "Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"chat\": true,\n\t\"username\": \"12344444\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_21a2c8a52aab450194ce09edd1135d23"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1618647379268.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_3bfad9088d464e95b3e6b62481a996db",
+      "parentId": "wrk_ea769cacaf61484592da106716bd400a",
+      "modified": 1618937306271,
+      "created": 1618937306271,
+      "name": "Settings",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1618937306271,
+      "_type": "request_group"
+    },
+    {
+      "_id": "env_1bbf995798985371181c1ff034a42ede252ed227",
+      "parentId": "wrk_ea769cacaf61484592da106716bd400a",
+      "modified": 1618835575531,
+      "created": 1618835575531,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1618835575531,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_1bbf995798985371181c1ff034a42ede252ed227",
+      "parentId": "wrk_ea769cacaf61484592da106716bd400a",
+      "modified": 1618835575562,
+      "created": 1618835575562,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_bf30bf3ef61b4bca8ffc536c11d9130c",
+      "parentId": "wrk_ea769cacaf61484592da106716bd400a",
+      "modified": 1618835575329,
+      "created": 1618835575329,
+      "fileName": "chat",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    },
+    {
+      "_id": "env_711751be29d241feb7d2c3a7533edbdd",
+      "parentId": "env_1bbf995798985371181c1ff034a42ede252ed227",
+      "modified": 1618835639210,
+      "created": 1618835583176,
+      "name": "Dev",
+      "data": {
+        "baseUrl": "http://localhost:3333"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "baseUrl"
+        ]
+      },
+      "color": "#ff0000",
+      "isPrivate": false,
+      "metaSortKey": 1618835583176,
+      "_type": "environment"
+    }
+  ]
+}
