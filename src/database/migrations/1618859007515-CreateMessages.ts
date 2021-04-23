@@ -1,6 +1,6 @@
 import { MigrationInterface, QueryRunner, Table } from 'typeorm'
 
-export class CreateMessages1619030502224 implements MigrationInterface {
+export class CreateMessages1618859007515 implements MigrationInterface {
   public async up (queryRunner: QueryRunner): Promise<void> {
     await queryRunner.createTable(
       new Table({
@@ -29,7 +29,6 @@ export class CreateMessages1619030502224 implements MigrationInterface {
             type: 'timestamp',
             default: 'now()'
           }
-
         ],
         foreignKeys: [
           {
