@@ -10,7 +10,7 @@ interface IConnectionCreate {
 }
 
 class ConnectionsService {
-  private connectionsRepository: Repository<Connection>;
+  private connectionsRepository: Repository<Connection>
 
   constructor () {
     this.connectionsRepository = getCustomRepository(ConnectionsRepository)

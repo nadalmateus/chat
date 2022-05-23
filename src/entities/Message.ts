@@ -13,23 +13,23 @@ import { User } from './User'
 @Entity('messages')
 class Message {
   @PrimaryColumn()
-  id: string;
+  id: string
 
   @Column()
-  admin_id: string;
+  admin_id: string
 
   @Column()
-  text: string;
+  text: string
 
   @JoinColumn({ name: 'user_id' })
   @ManyToOne(() => User)
-  user: User;
+  user: User
 
   @Column()
-  user_id: string;
+  user_id: string
 
   @CreateDateColumn()
-  created_at: Date;
+  created_at: Date
 
   constructor () {
     if (!this.id) {

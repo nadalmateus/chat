@@ -9,7 +9,7 @@ interface IMessageCreate {
 }
 
 class MessagesService {
-  private messagesRepository: Repository<Message>;
+  private messagesRepository: Repository<Message>
 
   constructor () {
     this.messagesRepository = getCustomRepository(MessagesRepository)
